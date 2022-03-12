@@ -20,7 +20,7 @@
 *  	- canvasId: id of target canvas tag
 *  	- seq: a hexadecimal sequence
 *  	- text: a text string
-*  	- order: boolean value (true|false) for drawing order; true: in normal order, false: in a reversed order
+*  	- order: boolean value (true|false) for drawing order; true: in normal order, false: in a reverse order
 *
 * `arcLandscape` converts hexadecimal sequence into canvas image.
 * `arcLandscape.fromText` converts text string into canvas image.
@@ -31,7 +31,7 @@
 function arcLandscape(canvasId,seq,order){
 	// - canvasId: id of target canvas tag
 	// - seq: a hexadecimal sequence
-	// - order: boolean value (true|false) for drawing order; true: in normal order, false: in a reversed order
+	// - order: boolean value (true|false) for drawing order; true: in normal order, false: in a reverse order
 	//===
 	//
 	seq=seq.toLowerCase();
@@ -122,7 +122,7 @@ function arcLandscape(canvasId,seq,order){
 	};
 	//===================================================================
 	//
-	//order := true: in normal order|false: in a reversed order
+	//order := true: in normal order|false: in a reverse order
 	if(!!order){
 		i=0;
 		while(i<seqL){
@@ -146,7 +146,7 @@ function arcLandscape(canvasId,seq,order){
 arcLandscape.fromText=(canvasId,text,order)=>{
 	// - canvasId: id of target canvas tag
 	// - text: a text string
-	// - order: boolean value (true|false) for drawing order; true: in normal order, false: in a reversed order
+	// - order: boolean value (true|false) for drawing order; true: in normal order, false: in a reverse order
 	//===
 	let i=0,l=text.length,seq='';
 	while(i<l){
@@ -182,17 +182,3 @@ arcLandscape.fromText=(canvasId,text,order)=>{
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 * SOFTWARE.
 */
-	//
-	//======================
-	//code samples
-	var cvsId=window.document.getElementsByTagName('canvas')[0].id;
-	window.document.getElementById(cvsId).width=300;
-	window.document.getElementById(cvsId).height=300;
-	//
-	var SEQ='1234567890abcdef';
-	//
-	arcLandscape(cvsId,SEQ,true);
-	//arcLandscape(cvsId,SEQ,false);
-	//
-	//arcLandscape.fromText(cvsId,SEQ,true);
-	//arcLandscape.fromText(cvsId,SEQ,false);

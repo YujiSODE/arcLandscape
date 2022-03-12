@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<link rel='icon' href='arcLandscape_js_20220312_txt_16X16.png'>
+		<meta name='author' content='Yuji Sode'>
+		<meta name='description' content='Tool to convert text or hexadecimal sequence into generative art based on arc system. Arc system is a system, where every object is regarded as structure on a spherical surface. Result describes another aspect of sequence or text.'>
+<!--
+/*arcLandscape
+* index.html
+*===================================================================
+*	Copyright (c) 2022 Yuji SODE <yuji.sode@gmail.com>
+*
+*	This software is released under the MIT License.
+*	See LICENSE or http://opensource.org/licenses/mit-license.php
+*===================================================================
+*/
+-->
+<!-- HTML interface for `arcLandscape`. Tool to convert text or hexadecimal sequence into generative art based on arc system. Arc system is a system, where every object is regarded as structure on a spherical surface. Result describes another aspect of sequence or text. -->
+		<title>arcLandscape</title>
+		<link rel='stylesheet' href='index_style.css'>
+		<script type='text/javascript' src='arcLandscape.js'></script>
+	</head>
+	<body>
+		<h1>arcLandscape</h1>
+		<p>HTML interface for <code><a href='https://github.com/YujiSODE/arcLandscape'>arcLandscape</a></code>.<br>
+		Tool to convert text or hexadecimal sequence into generative art based on arc system.<br>
+		Arc system is a system, where every object is regarded as structure on a spherical surface.<br>
+		Result describes another aspect of sequence or text.<br>
+			</p>
+			<!-- <a href='https://github.com/YujiSODE/arcLandscape/wiki'>Examples</a></p> -->
+		<!-- -->
+		<div id='formDiv'>
+			<form id='arcLandscapeForm'>
+				<!-- Text input -->
+				<fieldset>
+					<legend>Text/Hexadecimal input</legend>
+						<textarea id='textInput' placeholder='Put text/hexadecimal to convert' required></textarea>
+						<!-- button to clear textarea -->
+						<button id='clearB' type='button'>Clear text</button>
+				</fieldset>
+				<!-- input for canvas width and height -->
+				<fieldset>
+					<legend>Width and height</legend>
+						<label>Width<input type='number' id='cWidth' min=16 max=300 step=1 value=100 required></label>
+						<label>Height<input type='number' id='cHeight' min=16 max=300 step=1 value=100 required></label>
+				</fieldset>
+				<!-- load input data -->
+				<fieldset>
+					<legend>Load input data</legend>
+						<label>Reverse order<input type='checkbox' id='reverseOrder' value='reverse'></label>
+						<!-- load buttons -->
+						<button id='loadB_txt' type='button'>Load as text</button>
+						<button id='loadB_hex' type='button'>Load as hexadecimal</button>
+				</fieldset>
+				<!-- -->
+				<fieldset>
+					<legend>Download</legend>
+						<!-- button to generate download link -->
+						<button id='linkB' type='button'>Generate download link</button>
+						<p>Download link:<a id='downloadPNG' href='#' download='#' style='display:none;'></a></p>
+				</fieldset>
+			</form>
+		</div>
+		<canvas id='outputCvs' width=100 height=100></canvas>
+		<footer>
+			<p>Copyright (c) 2022 Yuji SODE</p>
+			<a href='https://github.com/YujiSODE/arcLandscape'>GitHub</a>
+		</footer>
+		<script type='text/javascript' src='index_main.js'></script>
+	</body>
+</html>
+<!-- /* arcLandscape/index.html */ -->
+<!-- /*=== LICENSE ===*/ -->
+<!--/*
+*          MIT License
+*
+* Copyright (c) 2022 Yuji Sode
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/-->
