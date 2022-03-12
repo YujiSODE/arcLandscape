@@ -1,0 +1,27 @@
+/*arcLandscape
+* index_style.css
+*===================================================================
+*       Copyright (c) 2022 Yuji SODE <yuji.sode@gmail.com>
+*
+*       This software is released under the MIT License.
+*       See LICENSE or http://opensource.org/licenses/mit-license.php
+*===================================================================
+*/
+canvas{
+	border:4px solid #f00;
+	background:#fff;
+}
+#formDiv{
+    border:1px solid #000;
+    width:40vw;
+    height:40vh;
+    overflow:scroll;
+}
+textarea{
+	width:35vw;
+	height:5vh;
+	resize:none;
+	overflow-y:scroll;
+	background:#000;
+	color:#fff;
+}
