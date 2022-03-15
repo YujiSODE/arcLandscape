@@ -6,7 +6,7 @@
 - [`index.html`] lines 54-55:  
   >```
   > 						<!-- loading order -->
-	>					<div><label>Reverse order<input type='checkbox' id='reverseOrder' value='reverse'></label></div>
+  >					<div><label>Reverse order<input type='checkbox' id='reverseOrder' value='reverse'></label></div>
   >```
 
 - [`index.html`] line 51: moved to after `line 53`
