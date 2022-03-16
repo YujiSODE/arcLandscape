@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.1 beta] - 2022-03-16
+## Fixed
+- [`index_main.js`] lines 46, 59 and 60: fixed timestamp generation
+
 ## [0.1 beta] - 2022-03-15
 ## Changed
 - [`README.md`] lines 1-10: added description
