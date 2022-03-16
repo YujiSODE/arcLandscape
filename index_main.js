@@ -43,7 +43,7 @@
 	//
 	//generating download link
 	LINKB.addEventListener('click',()=>{
-		let cvs=slf.getElementById('outputCvs'),url;
+		let cvs=slf.getElementById('outputCvs'),url,time=new Date();
 			//reset download link
 			A.href='#';
 			A.download='#';
@@ -56,8 +56,8 @@
 				url().then((v)=>{
 					A.href=v;
 				}).then(()=>{
-					A.textContent=(new Date()).toTimeString();
-					A.download=`arcLandscape_${(new Date()).getTime()}.png`;
+					A.textContent=time.toTimeString();
+					A.download=`arcLandscape_${time.getTime()}.png`;
 					A.style='display:inline;';
 				});
 			},2000);
