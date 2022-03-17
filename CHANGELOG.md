@@ -2,6 +2,8 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-03-17
+## Changed
+- [`index.html`] line 31: a link to wiki page
 
 ## Released: [0.1 beta] - 2022-03-17
 ## [0.1 beta] - 2022-03-16
