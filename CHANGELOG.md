@@ -1,6 +1,11 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-03-17
+## Changed
+- [`index_main.js`]: lines 21-23, 29-31, 37-39, 45-47, 53-55 and 74: changed filename of output to download
+- [`index.html`] line 31: a link to wiki page
+
 ## Released: [0.1 beta] - 2022-03-17
 ## [0.1 beta] - 2022-03-16
 ## Fixed
