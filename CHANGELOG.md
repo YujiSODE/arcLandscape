@@ -1,6 +1,8 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-03-17
+
 ## Released: [0.1 beta] - 2022-03-17
 ## [0.1 beta] - 2022-03-16
 ## Fixed
