@@ -1,6 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [0.1 beta] - 2022-03-17
 ## [0.1 beta] - 2022-03-16
 ## Fixed
 - [`index_main.js`] lines 46, 59 and 60: fixed timestamp generation
