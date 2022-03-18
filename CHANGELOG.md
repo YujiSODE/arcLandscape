@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-03-18
+## Added
+- [`index_main.js`] lines 74 and 75: added a comment to show output filename (`"AL<number>_TYPE<type|typeReverse><width>x<height>.png"`)
+
 ## [1.0] - 2022-03-17
 ## Changed
 - [`index_main.js`]: lines 21-23, 29-31, 37-39, 45-47, 53-55 and 74: changed filename of output to download
