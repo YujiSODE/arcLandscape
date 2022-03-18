@@ -49,7 +49,7 @@
 	//
 	//load input as hexadecimal sequence
 	LOADB_hex.addEventListener('click',()=>{
-		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1a-fA-F]/g,''),!REVERSE.checked);
+		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1A-Fa-f]/g,''),!REVERSE.checked);
 		//
 		//overriding value of TYPE
 		TYPE='hex';
@@ -71,6 +71,8 @@
 					A.href=v;
 				}).then(()=>{
 					A.textContent=time.toTimeString();
+					//
+					//output filename:"AL<number>_TYPE<type|typeReverse><width>x<height>.png"
 					A.download=`AL${time.getTime()}_TYPE${TYPE}${!REVERSE.checked?'':'Reverse'}${cvs.width}x${cvs.height}.png`;
 					A.style='display:inline;';
 				});
