@@ -49,7 +49,7 @@
 	//
 	//load input as hexadecimal sequence
 	LOADB_hex.addEventListener('click',()=>{
-		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1a-fA-F]/g,''),!REVERSE.checked);
+		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1A-Fa-f]/g,''),!REVERSE.checked);
 		//
 		//overriding value of TYPE
 		TYPE='hex';
