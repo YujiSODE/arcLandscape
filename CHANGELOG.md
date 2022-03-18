@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-03-18
+## Added
+- [`index.html`] line 53: `<br><code>(0-9,A-F,a-f)</code>`
+
 ## Fixed
 - [`index_main.js`] line 52:  
   ```
