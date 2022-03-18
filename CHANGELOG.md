@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-03-18
+## Fixed
+- [`index_main.js`] line 52:  
+  ```
+   		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1A-Fa-f]/g,''),!REVERSE.checked);
+  ```
+
 ## Added
 - [`index_main.js`] lines 74 and 75: added a comment to show output filename (`"AL<number>_TYPE<type|typeReverse><width>x<height>.png"`)
 
