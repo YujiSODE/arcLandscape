@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-03-20
+## Added
+- [`README.md`] lines 9-10: added title image link
+
 ## [1.0] - 2022-03-18
 ## Added
 - [`index.html`] line 53: `<br><code>(0-9,A-F,a-f)</code>`
