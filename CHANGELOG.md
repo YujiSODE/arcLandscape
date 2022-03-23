@@ -1,6 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [1.0] - 2022-03-23
 ## [1.0] - 2022-03-23
 ## Added
 - [`README.md`] lines 13-24: added `## Scripts` and `## Compatibility`
