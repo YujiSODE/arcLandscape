@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-03-23
+## Added
+- [`index.html`] lines 69-71: added title image link
+
 ## [1.0] - 2022-03-20
 ## Added
 - [`README.md`] lines 9-10: added title image link
