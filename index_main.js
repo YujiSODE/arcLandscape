@@ -18,27 +18,41 @@
 		CLEARB=slf.getElementById('clearB'),
 		LOADB_txt=slf.getElementById('loadB_txt'),
 		LOADB_hex=slf.getElementById('loadB_hex'),
-		LINKB=slf.getElementById('linkB');
+		LINKB=slf.getElementById('linkB'),
+		/* === TYPE := undefined|txt|hex === */
+		TYPE=undefined;
 	//
 	//form event
 	slf.getElementById('arcLandscapeForm').addEventListener('change',()=>{
 		C.width=slf.getElementById('cWidth').value;
 		C.height=slf.getElementById('cHeight').value;
+		//
+		//overriding value of TYPE
+		TYPE=undefined;
 	},false);
 	//
 	//clearing text input
 	CLEARB.addEventListener('click',()=>{
 		INPUT.value='';
+		//
+		//overriding value of TYPE
+		TYPE=undefined;
 	},false);
 	//
 	//load input as text string
 	LOADB_txt.addEventListener('click',()=>{
 		arcLandscape.fromText(cId,INPUT.value,!REVERSE.checked);
+		//
+		//overriding value of TYPE
+		TYPE='txt';
 	},false);
 	//
 	//load input as hexadecimal sequence
 	LOADB_hex.addEventListener('click',()=>{
-		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1a-fA-F]/g,''),!REVERSE.checked);
+		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1A-Fa-f]/g,''),!REVERSE.checked);
+		//
+		//overriding value of TYPE
+		TYPE='hex';
 	},false);
 	//
 	//generating download link
@@ -57,7 +71,9 @@
 					A.href=v;
 				}).then(()=>{
 					A.textContent=time.toTimeString();
-					A.download=`arcLandscape_${time.getTime()}.png`;
+					//
+					//output filename:"AL<number>_TYPE<type|typeReverse><width>x<height>.png"
+					A.download=`AL${time.getTime()}_TYPE${TYPE}${!REVERSE.checked?'':'Reverse'}${cvs.width}x${cvs.height}.png`;
 					A.style='display:inline;';
 				});
 			},2000);
