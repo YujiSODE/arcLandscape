@@ -12,8 +12,10 @@ ______
 The arc system is a system, where every object is regarded as structure on a spherical surface.
 
 ## Scripts
-- [`arcLandscape.js`](arcLandscape.js): main script
+### Main script
+- [`arcLandscape.js`](arcLandscape.js)
 
+### GUI
 - [`index.html`](index.html): GUI
 - [`index_main.js`](index_main.js): script for GUI
 - [`index_style.css`](index_style.css): style for GUI
