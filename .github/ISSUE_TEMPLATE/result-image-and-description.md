@@ -13,5 +13,5 @@ image
 # 2. Author
 Designed by NAME on [YYYY-MM-DD]
 
-## 3. Description
+# 3. Description
 Description of result image that was generated with `arcLandscape`
