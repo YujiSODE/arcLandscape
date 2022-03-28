@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [1.0.1] - 2022-03-28
+## Fixed
+- [`index_main.js`] lines 68, 74 and 84: fixed duplicated variable for canvas access (`cvs` to `C`)
+
 ## Changed
 - [`index_main.js`] lines 17-20 and 30-36: changed to add the upper limit of canvas size as 3000 
 
