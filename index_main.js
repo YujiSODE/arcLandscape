@@ -14,7 +14,10 @@
 		REVERSE=slf.getElementById('reverseOrder'),
 		A=slf.getElementById('downloadPNG'),
 		INPUT=slf.getElementById('textInput'),
-		/* === === */
+		/* === canvas size inputs === */
+		WIDTH=slf.getElementById('cWidth'),
+		HEIGHT=slf.getElementById('cHeight'),
+		/* === buttons === */
 		CLEARB=slf.getElementById('clearB'),
 		LOADB_txt=slf.getElementById('loadB_txt'),
 		LOADB_hex=slf.getElementById('loadB_hex'),
@@ -24,8 +27,13 @@
 	//
 	//form event
 	slf.getElementById('arcLandscapeForm').addEventListener('change',()=>{
-		C.width=slf.getElementById('cWidth').value;
-		C.height=slf.getElementById('cHeight').value;
+		//
+		//the upper limit for canvas size: 3000
+		WIDTH.value=WIDTH.value>3000?3000:WIDTH.value;
+		HEIGHT.value=HEIGHT.value>3000?3000:HEIGHT.value;
+		//
+		C.width=WIDTH.value;
+		C.height=HEIGHT.value;
 		//
 		//overriding value of TYPE
 		TYPE=undefined;
@@ -57,13 +65,13 @@
 	//
 	//generating download link
 	LINKB.addEventListener('click',()=>{
-		let cvs=slf.getElementById('outputCvs'),url,time=new Date();
+		let url,time=new Date();
 			//reset download link
 			A.href='#';
 			A.download='#';
 			A.style='display:none;';
 			//
-			url=async ()=>await cvs.toDataURL();
+			url=async ()=>await C.toDataURL();
 			//
 			setTimeout(()=>{
 				//set download link
@@ -73,7 +81,7 @@
 					A.textContent=time.toTimeString();
 					//
 					//output filename:"AL<number>_TYPE<type|typeReverse><width>x<height>.png"
-					A.download=`AL${time.getTime()}_TYPE${TYPE}${!REVERSE.checked?'':'Reverse'}${cvs.width}x${cvs.height}.png`;
+					A.download=`AL${time.getTime()}_TYPE${TYPE}${!REVERSE.checked?'':'Reverse'}${C.width}x${C.height}.png`;
 					A.style='display:inline;';
 				});
 			},2000);
