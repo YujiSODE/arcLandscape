@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0.1] - 2022-03-28
+## Changed
+- [`index_main.js`] lines 17-20 and 30-36: changed to add the upper limit of canvas size as 3000 
+
 ## Released: [1.0] - 2022-03-23
 ## [1.0] - 2022-03-23
 ## Added
