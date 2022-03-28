@@ -14,7 +14,10 @@
 		REVERSE=slf.getElementById('reverseOrder'),
 		A=slf.getElementById('downloadPNG'),
 		INPUT=slf.getElementById('textInput'),
-		/* === === */
+		/* === canvas size inputs === */
+		WIDTH=slf.getElementById('cWidth'),
+		HEIGHT=slf.getElementById('cHeight'),
+		/* === buttons === */
 		CLEARB=slf.getElementById('clearB'),
 		LOADB_txt=slf.getElementById('loadB_txt'),
 		LOADB_hex=slf.getElementById('loadB_hex'),
@@ -24,8 +27,13 @@
 	//
 	//form event
 	slf.getElementById('arcLandscapeForm').addEventListener('change',()=>{
-		C.width=slf.getElementById('cWidth').value;
-		C.height=slf.getElementById('cHeight').value;
+		//
+		//the upper limit for canvas size: 3000
+		WIDTH.value=WIDTH.value>3000?3000:WIDTH.value;
+		HEIGHT.value=HEIGHT.value>3000?3000:HEIGHT.value;
+		//
+		C.width=WIDTH.value;
+		C.height=HEIGHT.value;
 		//
 		//overriding value of TYPE
 		TYPE=undefined;
