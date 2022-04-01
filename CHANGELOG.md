@@ -3,6 +3,7 @@
 
 ## [1.1.0] - 2022-04-01
 ## Added
+- [`algorithm.md`]: cf.: #23
 - [`README.md`] lines 13-15:  
   ```
   ## Algorithm
