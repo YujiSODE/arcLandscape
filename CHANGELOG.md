@@ -2,7 +2,12 @@
 ## [Unreleased]
 
 ## [1.1.0] - 2022-04-01
+## Changed
+- [`algorithm.md`] lines 2-16: modified
+- [`README.md`] lines 15-18: added a link from `README.md` to `algorithm.md`
+
 ## Added
+- [`algorithm.md`]: cf.: #23
 - [`README.md`] lines 13-15:  
   ```
   ## Algorithm
