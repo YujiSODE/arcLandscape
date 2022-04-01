@@ -10,6 +10,9 @@ ______
 
 `arcLandscape` is a tool to convert text or hexadecimal sequence into generative art based on arc system.  
 The arc system is a system, where every object is regarded as structure on a spherical surface.
+## Algorithm
+![algorithm_arcLandscape](https://user-images.githubusercontent.com/19919184/161039825-e3730afd-1951-4db4-8f32-44b7f2bba564.png)  
+Result paths (blue) derives from given circle (dashed line) and value changes along _y_ axis (red).
 
 ## Scripts
 ### Main script
