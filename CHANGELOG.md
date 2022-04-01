@@ -1,6 +1,15 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.1.0] - 2022-04-01
+## Added
+- [`README.md`] lines 13-15:  
+  ```
+  ## Algorithm
+  ![algorithm_arcLandscape](https://user-images.githubusercontent.com/19919184/161039825-e3730afd-1951-4db4-8f32-44b7f2bba564.png)  
+  Result paths (blue) derives from given circle (dashed line) and value changes along _y_ axis (red).
+  ```
+
 ## Released: [1.0.1] - 2022-03-28
 ## [1.0.1] - 2022-03-28
 ## Fixed
