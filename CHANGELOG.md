@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.1.0] - 2022-04-04
+## Added
+- [`README.md`] line 17: `<b>Figure 1. Chart showing algorithm.</b><br>` is inserted
+
 ## [1.1.0] - 2022-04-01
 ## Changed
 - [`algorithm.md`] lines 2-16: modified
