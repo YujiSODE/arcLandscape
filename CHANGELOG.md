@@ -3,6 +3,7 @@
 
 ## [1.1.0] - 2022-04-04
 ## Added
+- [`algorithm.md`] line 15: `**Figure 1. Chart showing algorithm.**  `
 - [`README.md`] line 17: `<b>Figure 1. Chart showing algorithm.</b><br>` is inserted
 
 ## [1.1.0] - 2022-04-01
