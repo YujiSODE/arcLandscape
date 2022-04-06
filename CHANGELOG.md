@@ -1,6 +1,13 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.1.0] - 2022-04-06
+## Fixed
+- [`algorithm.md`] line 1:  
+  ```
+  # `arcLandscape/algorithm.md`
+  ```
+
 ## [1.1.0] - 2022-04-04
 ## Added
 - [`algorithm.md`] line 15: `**Figure 1. Chart showing algorithm.**  `

@@ -1,4 +1,4 @@
-# arcLandscape/`algorithm.md`
+# `arcLandscape/algorithm.md`
 
 # ![arcLandscape_js_20220312_txt_16X16](arcLandscape_js_20220312_txt_16X16.png)arcLandscape
 Tool to convert text or hexadecimal sequence into generative art based on arc system.  
