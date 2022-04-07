@@ -1,6 +1,11 @@
 # Change Log 
 ## [Unreleased]
 
+
+## [1.1.0] - 2022-04-07
+## Fixed
+- [`README.md`] line 17: from `_y_` to `<i>y</i>`
+
 ## [1.1.0] - 2022-04-06
 ## Fixed
 - [`algorithm.md`] line 1:  
@@ -58,7 +63,7 @@
    		arcLandscape(cId,INPUT.value.replaceAll(/[^0-1A-Fa-f]/g,''),!REVERSE.checked);
   ```
 
-## Added
+## Added<i>y</i>
 - [`index_main.js`] lines 74 and 75: added a comment to show output filename (`"AL<number>_TYPE<type|typeReverse><width>x<height>.png"`)
 
 ## [1.0] - 2022-03-17
