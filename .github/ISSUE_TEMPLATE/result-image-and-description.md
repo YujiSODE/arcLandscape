@@ -14,4 +14,11 @@ image
 Designed by NAME on [YYYY-MM-DD]
 
 # 3. Description
-Description of result image that was generated with `arcLandscape`
+Description of result image that was generated with `arcLandscape`.
+## 3-1. Source
+```
+Source of result image that was generated with `arcLandscape`.
+```
+## 3-2. Description
+- information
+- reference cited
