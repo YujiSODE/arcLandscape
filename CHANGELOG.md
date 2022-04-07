@@ -3,6 +3,12 @@
 
 
 ## [1.1.0] - 2022-04-07
+## Added
+- [`README.md`] line 17:  
+  ```
+  	<p><b>Figure 1. Chart showing algorithm of arc system.</b><br>Result paths (blue) derives from given circle (dashed line) and value changes along <i>y</i> axis (red).</p>
+  ```
+
 ## Fixed
 - [`README.md`] line 17: from `_y_` to `<i>y</i>`
 
