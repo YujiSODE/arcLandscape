@@ -1,6 +1,16 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.1.0] - 2022-04-08
+## Fixed
+- [`algorithm.md`] line 88:  
+  ```
+   `i = from L-1 to 0`
+  ```
+- [`algorithm.md`] line 88:  
+  ```
+  `i = from 0 to L-1`
+  ```
 
 ## [1.1.0] - 2022-04-07
 ## Added
