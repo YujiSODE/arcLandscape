@@ -1,6 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [1.1.0] - 2022-04-08
 ## [1.1.0] - 2022-04-08
 ## Fixed
 - [`algorithm.md`] line 88:  
