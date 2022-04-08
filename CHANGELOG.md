@@ -1,6 +1,11 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [1.1.1] - 2022-04-08
+## [1.1.1] - 2022-04-08
+## Fixed
+- [`README.md`] line 29: from `## Compatibilityalgorithm.md` to `## Compatibility`
+
 ## Released: [1.1.0] - 2022-04-08
 ## [1.1.0] - 2022-04-08
 ## Fixed
