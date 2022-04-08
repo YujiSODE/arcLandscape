@@ -85,6 +85,7 @@ while(T<2*π){
 ```
 
 ## Normal order
+`i = from 0 to L-1`
 ```
 i = 0;
 while(i<L){
@@ -94,7 +95,7 @@ while(i<L){
 ```
 
 ## Reverse order
-i = from L-1 to 0
+`i = from L-1 to 0`
 ```
 i = L-1;
 while(!(i<0)){
